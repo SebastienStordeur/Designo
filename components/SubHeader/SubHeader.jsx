@@ -3,7 +3,7 @@ import Button from "../UI/Button";
 
 const SubHeader = () => {
   return (
-    <section className="px-6 pt-20 bg-peach text-center md:px-20 md:w-11/12 md:mx-auto">
+    <section className="px-6 pt-20 bg-peach text-center md:px-20 md:w-11/12 md:mx-auto lg:max-w-[1111px]">
       <h1 className="text-white text-3xl leading-9 text-center font-medium">
         Award-winning custom designs and digital branding solutions
       </h1>

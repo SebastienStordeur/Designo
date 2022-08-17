@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header
       id="header"
-      className="flex justify-between items-center w-full h-24 px-6 md:h-[155px] md:px-8"
+      className="flex justify-between items-center w-full mx-auto h-24 px-6 md:h-[155px] md:px-8 lg:max-w-[1111px] xl:px-0"
     >
       <div className="flex">
         <div className="conic-gradient-logo mr-4"></div>

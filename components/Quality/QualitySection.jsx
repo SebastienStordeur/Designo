@@ -6,7 +6,7 @@ console.log(data.qualities);
 
 const QualitySection = () => {
   return (
-    <section>
+    <section className="lg:flex">
       {data.qualities.map((quality) => {
         return <Block data={quality} key={quality.id} />;
       })}
