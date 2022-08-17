@@ -1,9 +1,10 @@
 import React from "react";
+import Image from "next/image";
 import Button from "../UI/Button";
 
 const SubHeader = () => {
   return (
-    <section className="px-6 pt-20 bg-peach text-center md:px-20 md:w-11/12 md:mx-auto lg:max-w-[1111px]">
+    <section className="overflow-hidden px-6 pt-20 bg-peach text-center h-[843px] md:px-20 md:w-11/12 md:mx-auto lg:max-w-[1111px]">
       <h1 className="text-white text-3xl leading-9 text-center font-medium">
         Award-winning custom designs and digital branding solutions
       </h1>
@@ -13,6 +14,13 @@ const SubHeader = () => {
         out more about our services.
       </p>
       <Button>Learn More</Button>
+      <div className="relative w-full h-[432px] scale-[2] mt-32">
+        <Image
+          src="/assets/home/desktop/image-hero-phone.png"
+          alt=""
+          layout="fill"
+        />
+      </div>
     </section>
   );
 };

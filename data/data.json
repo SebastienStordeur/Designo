@@ -108,5 +108,34 @@
       "description": "A poster made in collaboration with the Federal Art Project",
       "image": "/assets/graphic-design/desktop/image-science.jpg"
     }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "country": "Canada",
+      "office": "Designo Central Office",
+      "address": "3886 Wellington Street",
+      "address2": "Toronto, Ontario M9C 3J5",
+      "phone": "+1 253-863-8967",
+      "mail": "contact@designo.co"
+    },
+    {
+      "id": 2,
+      "country": "Australia",
+      "office": "Designo AU Office",
+      "address": "19 Balonne Street",
+      "address2": "New South Wales 2443",
+      "phone": "(02) 6720 9092",
+      "mail": "contact@designo.au"
+    },
+    {
+      "id": 3,
+      "country": "United Kingdom",
+      "office": "Designo UK Office",
+      "address": "13 Colorado Way",
+      "address2": "Rhyd-y-fro SA8 9GA",
+      "phone": "078 3115 1400",
+      "mail": "contact@designo.uk"
+    }
   ]
 }

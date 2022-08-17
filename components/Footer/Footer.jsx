@@ -1,5 +1,6 @@
 import React from "react";
 import Contact from "./Contact/Contact";
+import Socials from "./Socials/Socials";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <Contact />
       <div className="flex justify-center my-16 text-center">
         <div className="conic-gradient-logo"></div>
-        <p className="relative uppercase tracking-[5px] font-bold text-white w-full after:content-[''] after:absolute after:block after:h-px after:w-11/12 after:bg-light-grey after:mt-8">
+        <p className="relative mt-64 uppercase tracking-[5px] font-bold text-white w-full after:content-[''] after:absolute after:block after:h-px after:w-11/12 after:bg-light-grey after:mt-8">
           Designo
         </p>
       </div>
@@ -33,7 +34,7 @@ const Footer = () => {
             <li>M : contact@designo.co</li>
           </ul>
         </div>
-        <div>Placeholder</div>
+        <Socials />
       </div>
     </footer>
   );
