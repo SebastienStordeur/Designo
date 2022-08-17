@@ -1,15 +1,14 @@
 import React from "react";
 
 const ProjectInfos = (props) => {
-  console.log(props);
   return (
-    <div className="absolute inset-x-0 bottom-0 h-[158px] w-full z-10 bg-light-peach bg-opacity-20 px-[30px]">
-      <h3 className="mt-8 text-peach font-medium text-center text-xl uppercase tracking-[5px]">
-        {props.infos.title}
-      </h3>
-      <p className="mt-4 text-center text-dark-grey">
-        {props.infos.description}
-      </p>
+    <div className="absolute bottom-0 h-[158px] text-center w-full bg-light-peach bg-opacity-20 px-8 cursor-pointer hover:bg-opacity-100 hover:text-white md:relative md:w-6/12 md:h-full md:flex md:justify-center md:items-center lg:w-full lg:absolute lg:h-[158px]">
+      <div>
+        <h3 className="mt-8 text-peach font-medium text-xl uppercase tracking-[5px] md:mt-0">
+          {props.infos.title}
+        </h3>
+        <p className="mt-4 text-dark-grey">{props.infos.description}</p>
+      </div>
     </div>
   );
 };
