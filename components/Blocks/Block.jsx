@@ -5,6 +5,7 @@ const Block = (props) => {
   return (
     <article className="px-6 mt-20 md:mt-[120px] lg:mt-40 text-center md:flex md:text-left md:items-center md:px-10 lg:block lg:text-center xl:max-w-[1111px] lg:px-0 lg:mx-auto">
       <div className="overflow-hidden w-52 h-52 relative m-auto md:mr-12">
+        <div className="absolute rounded-full w-full h-full bg-peach bg-opacity-20"></div>
         <Image
           src={props.data.image}
           alt={`${props.data.title} illustration`}

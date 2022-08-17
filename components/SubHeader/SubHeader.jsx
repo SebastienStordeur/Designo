@@ -14,7 +14,7 @@ const SubHeader = () => {
         out more about our services.
       </p>
       <Button>Learn More</Button>
-      <div className="relative w-full h-[432px] scale-[2] mt-32">
+      <div className="relative  w-72 h-[432px] scale-[2] mt-32">
         <Image
           src="/assets/home/desktop/image-hero-phone.png"
           alt=""
