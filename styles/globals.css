@@ -31,3 +31,17 @@ a {
     background: black;
   }
 }
+
+.conic-gradient-logo {
+  width: 24px;
+  height: 24px;
+  background: conic-gradient(
+    from 90deg at 50% 50%,
+    rgba(231, 129, 107, 0.0001) 0deg,
+    #e7816b 359.74deg,
+    rgba(231, 129, 107, 0.0001) 360deg
+  );
+  transform: matrix(0, -1, -1, 0, 0, 0);
+  border-radius: 50%;
+  overflow: hidden;
+}
