@@ -137,5 +137,12 @@
       "phone": "078 3115 1400",
       "mail": "contact@designo.uk"
     }
+  ],
+  "countries": [
+    {
+      "id": 1,
+      "name": "canada",
+      "image": "/public/assets/about/tablet/"
+    }
   ]
 }

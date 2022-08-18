@@ -7,7 +7,16 @@ const WebSection = () => {
   return (
     <section className="mt-24">
       {data.projects.map((project) => {
-        return <Project key={project.id} data={project} />;
+        return (
+          <Project
+            key={project.id}
+            data={{
+              project: project,
+              className: "w-11/12 mx-auto",
+              projectClass: "py-8",
+            }}
+          />
+        );
       })}
     </section>
   );
