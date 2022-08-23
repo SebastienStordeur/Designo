@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Socials = () => {
   return (
-    <div className="mt-10 w-48 mx-auto">
+    <div className="mt-10 w-48 mx-auto md:mx-0">
       <ul className="flex px-auto">
         <li className="cursor-pointer">
           <Image
