@@ -11,7 +11,7 @@ const Contact = () => {
         Ready to take it to the next level? Contact us today and find out how
         our expertise can help your business grow.
       </p>
-      <Button className="mt-8 mx-auto">Get in touch</Button>
+      <Button className="mt-8 mx-auto bg-white">Get in touch</Button>
     </article>
   );
 };

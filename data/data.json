@@ -142,7 +142,17 @@
     {
       "id": 1,
       "name": "canada",
-      "image": "/public/assets/about/tablet/"
+      "image": "/assets/shared/desktop/illustration-canada.svg"
+    },
+    {
+      "id": 2,
+      "name": "australia",
+      "image": "/assets/shared/desktop/illustration-australia.svg"
+    },
+    {
+      "id": 3,
+      "name": "united kingdom",
+      "image": "/assets/shared/desktop/illustration-united-kingdom.svg"
     }
   ]
 }
