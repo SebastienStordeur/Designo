@@ -3,7 +3,7 @@ import React from "react";
 const Card = (props) => {
   return (
     <article
-      className={`w-11/12 h-[250px] overflow-hidden relative m-auto rounded-lg  ${
+      className={`w-full h-[250px] overflow-hidden relative rounded-lg  ${
         props.className || ""
       }`}
     >

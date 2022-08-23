@@ -2,8 +2,6 @@ import React from "react";
 import data from "../../data/data.json";
 import Block from "../Blocks/Block";
 
-console.log(data.qualities);
-
 const QualitySection = () => {
   return (
     <section className="lg:flex">

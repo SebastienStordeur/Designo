@@ -5,7 +5,7 @@ import Project from "./Project/Project";
 
 const WebSection = () => {
   return (
-    <section className="mt-24">
+    <section className="mt-24 mx-6 lg:grid lg:grid-cols-3 lg:gap-8">
       {data.projects.map((project) => {
         return (
           <Project
