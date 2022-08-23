@@ -13,12 +13,13 @@ const SubHeader = () => {
         responsive websites, app design, and engaging brand experiences. Find
         out more about our services.
       </p>
-      <Button>Learn More</Button>
-      <div className="relative  w-72 h-[432px] scale-[2] mt-32">
+      <Button className="bg-white text-dark-grey">Learn More</Button>
+      <div className="relative w-72 mx-auto h-[432px] scale-[2] mt-40">
         <Image
           src="/assets/home/desktop/image-hero-phone.png"
           alt=""
           layout="fill"
+          priority={true}
         />
       </div>
     </section>

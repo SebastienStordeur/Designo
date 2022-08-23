@@ -17,9 +17,7 @@ const Country = (props) => {
       <h2 className="uppercase font-medium text-xl tracking-[5px] mt-12 mb-8">
         {props.country.name}
       </h2>
-      <Link href="/locations">
-        <Button className="bg-peach text-white mb-12">See location</Button>
-      </Link>
+      <Button className="bg-peach text-white mb-12">See location</Button>
     </article>
   );
 };

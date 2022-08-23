@@ -11,7 +11,7 @@ const LinkCard = (props) => {
       <div className="z-10 absolute text-center w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <h2 className="uppercase text-white text-[26px]">{props.title}</h2>
         <Link href={props.link}>
-          <p className="uppercase text-white text-[15px] tracking-[5px]">
+          <p className="uppercase text-white text-[15px] tracking-[5px] cursor-pointer">
             View projects
             <span className="text-peach">
               <Image src={chevron} alt="" width={8} height={8} />

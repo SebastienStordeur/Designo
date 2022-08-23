@@ -33,7 +33,7 @@ const ContactForm = () => {
   };
   return (
     <form onSubmit={handleSubmit} className="mx-auto">
-      <div>
+      <div className="mb-6">
         <Input
           type="text"
           name="name"
@@ -47,10 +47,10 @@ const ContactForm = () => {
       <div>
         <Input type="email" placeholder="Email Address" />
       </div>
-      <div>
+      <div className="my-6">
         <Input type="phone" placeholder="Phone" />
       </div>
-      <Button>Submit</Button>
+      <Button className="bg-white text-dark-grey mt-10">Submit</Button>
     </form>
   );
 };

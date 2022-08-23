@@ -15,7 +15,7 @@ const GraphicPage = () => {
         description="We deliver eye-catching branding materials that are 
         tailored to meet your business objectives."
       />
-      <section className="lg:grid lg:grid-cols-3 lg:gap-8 lg:max-w-[1111px] mx-auto">
+     <section className="pt-24 mx-6 md:mx-8 max-w-[1112px] md:w-11/12 lg:grid lg:grid-cols-3 lg:gap-8 lg:mx-auto">
         {data.graphics.map((graphic) => {
           return <Project key={graphic.id} data={{project:graphic, className: "w-11/12 mx-auto",
           projectClass: "py-8",}} />;

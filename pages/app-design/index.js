@@ -14,7 +14,7 @@ const index = () => {
         title="App Design"
         description="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
       />
-      <section className="mt-24 mx-6 lg:grid lg:grid-cols-3 lg:gap-8">
+      <section className="mt-24 mx-6 w-11/12 max-w-[1111px] lg:mx-auto lg:grid lg:grid-cols-3 lg:gap-8">
       {data.apps.map(app => {
         return <Project data={{project: app, className: "w-11/12 mx-auto", projectClass:"py-8"}} key={app.id} />
       })}
