@@ -3,6 +3,7 @@ import useInput from "../../hooks/useInput";
 
 import Button from "../UI/Button";
 import Input from "../UI/Input";
+import Textarea from "../UI/Textarea";
 
 const letterRegex = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/;
 const isNotEmpty = (value) => value.trim() !== "";
@@ -12,15 +13,31 @@ const isValidName = (value) =>
 const ContactForm = () => {
   const {
     value: enteredName,
-    isValid: enterNameIsValid,
+    isValid: enteredNameIsValid,
     hasError: nameInputHasError,
     valueChangeHandler: nameChangeHandler,
     inputBlurHandler: nameBlurHandler,
-    reset: resetNameHandInput,
+    reset: resetNameInput,
+  } = useInput(isValidName);
+  const {
+    value: enteredEmail,
+    isValid: enteredEmailIsValid,
+    hasError: emailInputHasError,
+    valueChangeHandler: emailChangeHandler,
+    inputBlurHandler: emailBlurHandler,
+    reset: resetEmailInput,
+  } = useInput(isValidName);
+  const {
+    value: enteredPhone,
+    isValid: enteredPhoneIsValid,
+    hasError: phoneInputHasError,
+    valueChangeHandler: phoneChangeHandler,
+    inputBlurHandler: phoneBlurHandler,
+    reset: resetPhoneInput,
   } = useInput(isValidName);
 
   let formIsValid = false;
-  if (enterNameIsValid) {
+  if (enteredNameIsValid) {
     formIsValid = true;
   }
 
@@ -32,7 +49,7 @@ const ContactForm = () => {
     resetNameHandInput();
   };
   return (
-    <form onSubmit={handleSubmit} className="mx-auto">
+    <form onSubmit={handleSubmit} className="mx-auto lg:w-2/4">
       <div className="mb-6">
         <Input
           type="text"
@@ -45,12 +62,31 @@ const ContactForm = () => {
         {nameInputHasError && <p>Error</p>}
       </div>
       <div>
-        <Input type="email" placeholder="Email Address" />
+        <Input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          onChange={emailChangeHandler}
+          onBlur={emailBlurHandler}
+          value={enteredEmail}
+        />
       </div>
       <div className="my-6">
-        <Input type="phone" placeholder="Phone" />
+        <Input
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          onChange={phoneChangeHandler}
+          onBlur={phoneBlurHandler}
+          value={enteredPhone}
+        />
       </div>
-      <Button className="bg-white text-dark-grey mt-10">Submit</Button>
+      <div>{/* <Textarea /> */}</div>
+      <div className="w-full text-center md:text-right">
+        <Button className="bg-white text-dark-grey mt-10 md:mr-[4.44%]">
+          Submit
+        </Button>
+      </div>
     </form>
   );
 };
