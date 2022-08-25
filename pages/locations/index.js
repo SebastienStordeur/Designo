@@ -3,7 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Locations from "../../components/Locations/Locations";
 
-const index = () => {
+const LocationPage = () => {
   return (
     <React.Fragment>
       <Header />
@@ -13,4 +13,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default LocationPage;

@@ -4,8 +4,8 @@ import Button from "../UI/Button";
 
 const SubHeader = () => {
   return (
-    <section className="overflow-hidden px-6 pt-20 bg-peach h-[843px] md:px-20 md:w-11/12 md:mx-auto lg:max-w-[1111px] lg:flex">
-      <div className="text-center text-white lg:text-left lg:mt-32 lg:w-2/4">
+    <section className="overflow-hidden px-6 pt-20 bg-peach h-[843px] lg:h-[640px] md:px-20 md:w-11/12 md:mx-auto md:rounded-2xl lg:max-w-[1111px] lg:flex">
+      <div className="text-center text-white lg:text-left lg:mt-20 lg:w-2/4">
         <h1 className="text-3xl md:text-5xl leading-9 font-medium">
           Award-winning custom designs and digital branding solutions
         </h1>
@@ -18,7 +18,7 @@ const SubHeader = () => {
           Learn More
         </Button>
       </div>
-      <div className="relative w-72 mx-auto h-[432px] scale-[2] mt-40 lg:scale-[2.5] lg:w-2/6 lg:mt-64">
+      <div className="relative w-72 mx-auto h-[432px] scale-[2] mt-40 lg:scale-[2] lg:w-2/6 lg:mt-38">
         <Image
           src="/assets/home/desktop/image-hero-phone.png"
           alt="Phone Image"
