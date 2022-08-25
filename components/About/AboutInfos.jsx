@@ -2,19 +2,31 @@ import React from "react";
 import Image from "next/image";
 
 const AboutInfos = (props) => {
+  const splittedArray = props.image.split(" ");
   return (
     <article
-      className={`w-full h-[800px] overflow-hidden ${props.className || ""}`}
+      className={`w-full mx-auto md:rounded-2xl overflow-hidden md:w-11/12 lg:h-[640px] lg:flex ${
+        props.className || ""
+      }`}
     >
-      <div className="relative w-full h-80">
-        <Image
-          src={props.image}
-          alt={props.title}
-          layout="fill"
-          priority={true}
-        />
+      <div className="relative w-full h-80 lg:h-full">
+        <picture>
+          <source
+            srcSet={`${splittedArray[0]}desktop${splittedArray[1]}`}
+            media="(min-width:1024px)"
+          />
+          <source
+            srcSet={`${splittedArray[0]}tablet${splittedArray[1]}`}
+            media="(min-width:768px)"
+          />
+          <img
+            src={`${splittedArray[0]}mobile${splittedArray[1]}`}
+            alt=""
+            className="absolute w-full h-full"
+          />
+        </picture>
       </div>
-      <div className="w-full bg-light-peach bg-opacity-20 px-6 py-20 text-center">
+      <div className="w-full bg-light-peach bg-opacity-20 px-6 py-20 text-center lg:text-left lg:px-24 lg:pt-40">
         <h2 className="text-peach text-[32px] font-medium">
           World-class talent
         </h2>
