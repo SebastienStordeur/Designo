@@ -1,14 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import MobileMenu from "./MobileMenu/MobileMenu";
+import React, { useState } from "react";
+import Button from "../UI/Button";
+import MobileNavbar from "./Navbar/MobileNavbar";
 import Navbar from "./Navbar/Navbar";
 
 const Header = () => {
+  const [isNavbarShown, setIsNavbarShown] = useState(false);
+
+  const toggleMenuHandler = () => {
+    setIsNavbarShown((prevValue) => !prevValue);
+  };
+
   return (
     <header
       id="header"
-      className="flex justify-between items-center w-full mx-auto h-24 px-6 md:h-[155px] md:px-8 lg:max-w-[1111px] xl:px-0"
+      className="relative flex justify-between items-center w-full mx-auto h-24 px-6 md:h-[155px] md:px-8 lg:max-w-[1111px] xl:px-0"
     >
       <div className="flex">
         <Link href="/">
@@ -22,7 +29,19 @@ const Header = () => {
         </Link>
       </div>
       <Navbar />
-      <MobileMenu />
+      {isNavbarShown && <MobileNavbar />}
+      <button onClick={toggleMenuHandler} className="md:hidden">
+        <Image
+          src={
+            isNavbarShown
+              ? "/assets/shared/mobile/icon-close.svg"
+              : "/assets/shared/mobile/icon-hamburger.svg"
+          }
+          alt="Hamburger Menu"
+          width={24}
+          height={24}
+        />
+      </button>
     </header>
   );
 };
