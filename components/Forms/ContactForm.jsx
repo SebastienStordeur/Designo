@@ -81,7 +81,9 @@ const ContactForm = () => {
           value={enteredPhone}
         />
       </div>
-      <div>{/* <Textarea /> */}</div>
+      <div>
+        <Textarea />
+      </div>
       <div className="w-full text-center md:text-right">
         <Button className="bg-white text-dark-grey mt-10 md:mr-[4.44%]">
           Submit
