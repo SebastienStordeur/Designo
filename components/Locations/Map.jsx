@@ -1,5 +1,17 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+
+const icon = new L.icon({
+  iconUrl: "/location-sign-svgrepo-com.svg",
+  iconRetinaUrl: "/location-sign-svgrepo-com.svg",
+  iconAnchor: [20, 20],
+  popupAnchor: null,
+  shadowUrl: null,
+  shadowSize: null,
+  shadowAnchor: null,
+  iconSize: [20, 20],
+});
 
 const Map = (props) => {
   return (
@@ -13,9 +25,7 @@ const Map = (props) => {
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={props.coordinate}>
-        <Popup>Designo Office</Popup>
-      </Marker>
+      <Marker position={props.coordinate} icon={icon}></Marker>
     </MapContainer>
   );
 };

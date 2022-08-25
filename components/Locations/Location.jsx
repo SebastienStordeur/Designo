@@ -5,7 +5,7 @@ const Location = (props) => {
   const Map = dynamic(() => import("./Map"), { ssr: false });
   return (
     <article
-      className={`w-full max-w-[1111px] mx-auto text-center mb-10 md:w-11/12 md:text-left lg:flex lg:h-96 lg:w-full ${
+      className={`w-full max-w-[1111px] mx-auto text-center mb-10 md:w-11/12 md:text-left lg:flex lg:h-96 lg:-mb-8 ${
         props.data.className || ""
       }`}
     >
@@ -13,8 +13,8 @@ const Location = (props) => {
         <Map coordinate={props.data.coordinate} />
       </div>
       <div
-        className={`bg-light-peach bg-opacity-20 py-20 md:mt-8 md:h-80 md:px-32 md:rounded-2xl lg:mt-0 overflow-hidden lg:px-24 lg:w-full ${
-          props.data.margin || "lg:ml-8"
+        className={`bg-light-peach bg-opacity-20 py-20 md:mt-8 md:h-80 md:px-32 md:rounded-2xl lg:mt-0 overflow-hidden lg:px-10 lg:w-full lg:max-w-[700px] xl:px-32 ${
+          props.data.margin ? "lg:mr-8" : "lg:ml-8"
         }`}
       >
         <h2 className="text-peach text-3xl font-medium">
