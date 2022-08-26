@@ -11,12 +11,12 @@ const Header = () => {
     setIsNavbarShown((prevValue) => !prevValue);
   };
 
-  if (isNavbarShown) document.body.style.overflow = "hidden";
-
   return (
     <header
       id="header"
-      className="relative flex justify-between items-center w-full mx-auto h-24 px-6 md:h-[155px] md:px-8 lg:max-w-[1111px] xl:px-0"
+      className={`flex justify-between bg-white items-center w-full mx-auto h-24 px-6 md:h-[155px] md:px-8 lg:max-w-[1111px] xl:px-0 z-[100] ${
+        isNavbarShown ? "fixed" : "relative"
+      }`}
     >
       <div className="flex">
         <Link href="/">
