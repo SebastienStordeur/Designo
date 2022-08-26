@@ -1,4 +1,4 @@
-![alt text](/screenshot/preview.png)
+![alt text](./screenshot/preview.png)
 
 ## Designo
 
