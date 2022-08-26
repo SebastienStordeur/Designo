@@ -1,7 +1,8 @@
-import React from "react";
+/* eslint-disable react/display-name */
+import React, { forwardRef } from "react";
 import PropTypes from "prop-types";
 
-const Button = (props) => {
+const Button = forwardRef((props, _ref) => {
   return (
     <button
       className={`disabled:cursor-not-allowed w-[152px] h-14 m-auto rounded-lg uppercase px-6 font-medium text-[15px] cursor-pointer ${
@@ -12,12 +13,11 @@ const Button = (props) => {
       {props.children}
     </button>
   );
-};
+});
 
 export default Button;
 
 Button.propTypes = {
   className: PropTypes.string,
   label: PropTypes.string,
-  children: PropTypes.string,
 };

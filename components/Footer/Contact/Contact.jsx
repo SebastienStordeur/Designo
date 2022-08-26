@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Button from "../../UI/Button";
 
 const Contact = () => {
@@ -15,7 +16,9 @@ const Contact = () => {
       </div>
       <div className="lg:w-full lg:h-full lg:mt-56">
         <Button className="mt-8 mx-auto bg-white text-dark-grey lg:mt-0 hover:bg-light-peach hover:text-white">
-          Get in touch
+          <Link href="/contact" passHref>
+            Get in touch
+          </Link>
         </Button>
       </div>
     </article>

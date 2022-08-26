@@ -5,7 +5,7 @@ const AboutInfos = (props) => {
   const splittedArray = props.image.split(" ");
   return (
     <article
-      className={`w-full mx-auto md:rounded-2xl overflow-hidden md:w-11/12 lg:h-[640px] lg:flex ${
+      className={`w-full mx-auto max-w-[1111px] md:rounded-2xl overflow-hidden md:w-11/12 lg:h-[640px] lg:flex ${
         props.className || ""
       }`}
     >

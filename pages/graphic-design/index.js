@@ -45,7 +45,7 @@ const GraphicPage = () => {
         <LinkCard
           title="web design"
           image="/assets/home/ /image-web-design.jpg"
-          link="graphic-design"
+          link="web-design"
           className="lg:w-full"
         />
       </section>

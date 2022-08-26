@@ -9,6 +9,7 @@ const Country = (props) => {
   return (
     <article className="flex flex-col items-center">
       <div className="w-52 h-52 relative">
+        <div className="absolute rounded-full w-full h-full bg-peach bg-opacity-20"></div>
         <Image
           src={props.country.image}
           alt={props.name}
@@ -19,7 +20,11 @@ const Country = (props) => {
       <h2 className="uppercase font-medium text-xl tracking-[5px] mt-12 mb-8">
         {props.country.name}
       </h2>
-      <Button className="bg-peach text-white mb-12">See location</Button>
+      <Button className="bg-peach text-white mb-12 hover:bg-opacity-70">
+        <Link href="/locations" passHref>
+          See location
+        </Link>
+      </Button>
     </article>
   );
 };

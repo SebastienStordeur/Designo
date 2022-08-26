@@ -24,10 +24,12 @@ const Footer = () => {
                 <li className="cursor-pointer">Our company</li>
               </Link>
               <Link href="/locations">
-                <li className="my-8 md:my-0 md:mx-10">Locations</li>
+                <li className="my-8 md:my-0 md:mx-10 cursor-pointer">
+                  Locations
+                </li>
               </Link>
               <Link href="/contact">
-                <li>Contact</li>
+                <li className="cursor-pointer">Contact</li>
               </Link>
             </ul>
           </div>

@@ -25,7 +25,7 @@ const index = () => {
       })}
       </section>
       <section className="pt-24 mx-6 md:mx-8 max-w-[1112px] lg:grid lg:grid-cols-2 lg:gap-8 lg:mx-auto">
-        <LinkCard title="web design" image="/assets/home/ /image-web-design.jpg" link="app-design" className="my-6 lg:my-0 lg:w-full"/>
+        <LinkCard title="web design" image="/assets/home/ /image-web-design.jpg" link="web-design" className="my-6 lg:my-0 lg:w-full"/>
         <LinkCard title="graphic design" image="/assets/home/ /image-graphic-design.jpg" link="graphic-design" className="lg:w-full" />
       </section>
       <Footer />

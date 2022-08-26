@@ -10,13 +10,13 @@ const MobileNavbar = (props) => {
       ></div>
       <nav className="bg-black px-6 py-14 -ml-6 mt-72 h-52 w-full text-white z-[1500] absolute md:hidden">
         <ul className="flex flex-col uppercase tracking-[2px] text-2xl leading-3">
-          <li className="cursor-pointer">
+          <li className="cursor-pointer" onClick={props.onClick}>
             <Link href="about">Our Company</Link>
           </li>
-          <li className="cursor-pointer my-8">
+          <li className="cursor-pointer my-8" onClick={props.onClick}>
             <Link href="locations">Locations</Link>
           </li>
-          <li className="cursor-pointer">
+          <li className="cursor-pointer" onClick={props.onClick}>
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
