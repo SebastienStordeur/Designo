@@ -11,6 +11,8 @@ const Header = () => {
     setIsNavbarShown((prevValue) => !prevValue);
   };
 
+  if (isNavbarShown) document.body.style.overflow = "hidden";
+
   return (
     <header
       id="header"
