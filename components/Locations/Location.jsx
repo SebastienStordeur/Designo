@@ -1,6 +1,8 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
+import PropTypes from "prop-types";
+
 const Location = (props) => {
   const Map = dynamic(() => import("./Map"), { ssr: false });
   return (
@@ -38,3 +40,18 @@ const Location = (props) => {
 };
 
 export default Location;
+
+Location.propTypes = {
+  data: PropTypes.shape({
+    address: PropTypes.string,
+    address2: PropTypes.string,
+    className: PropTypes.string,
+    country: PropTypes.string,
+    id: PropTypes.number,
+    mail: PropTypes.string,
+    margin: PropTypes.string,
+    office: PropTypes.string,
+    phone: PropTypes.string,
+    coordinate: PropTypes.arrayOf(PropTypes.number),
+  }),
+};

@@ -4,6 +4,8 @@ import Link from "next/link";
 import Card from "../UI/Card";
 import chevron from "/public/chevron_right.svg";
 
+import PropTypes from "prop-types";
+
 const LinkCard = (props) => {
   const splittedArray = props.image.split(" ");
   return (
@@ -39,3 +41,10 @@ const LinkCard = (props) => {
 };
 
 export default LinkCard;
+
+LinkCard.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.string,
+  link: PropTypes.string,
+  className: PropTypes.string,
+};

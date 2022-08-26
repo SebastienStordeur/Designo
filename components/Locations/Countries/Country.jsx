@@ -3,6 +3,8 @@ import Link from "next/link";
 import React from "react";
 import Button from "../../UI/Button";
 
+import PropTypes from "prop-types";
+
 const Country = (props) => {
   return (
     <article className="flex flex-col items-center">
@@ -23,3 +25,13 @@ const Country = (props) => {
 };
 
 export default Country;
+
+Country.propTypes = {
+  country: PropTypes.shape({
+    country: PropTypes.shape({
+      id: PropTypes.number,
+      name: PropTypes.string,
+      image: PropTypes.string,
+    }),
+  }),
+};

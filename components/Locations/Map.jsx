@@ -2,6 +2,8 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
+import PropTypes from "prop-types";
+
 const icon = new L.icon({
   iconUrl: "/location-sign-svgrepo-com.svg",
   iconRetinaUrl: "/location-sign-svgrepo-com.svg",
@@ -31,3 +33,7 @@ const Map = (props) => {
 };
 
 export default Map;
+
+Map.propTypes = {
+  coordinate: PropTypes.arrayOf(PropTypes.number),
+};

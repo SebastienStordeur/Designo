@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import PropTypes from "prop-types";
 
 const AboutInfos = (props) => {
   const splittedArray = props.image.split(" ");
@@ -40,3 +40,10 @@ const AboutInfos = (props) => {
 };
 
 export default AboutInfos;
+
+AboutInfos.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  firstP: PropTypes.string,
+  secondP: PropTypes.string,
+};

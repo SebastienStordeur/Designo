@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
+import PropTypes from "prop-types";
+
 const Block = (props) => {
   return (
     <article className="px-6 mt-20 text-center md:h-52 md:mt-[8] md:flex md:text-left md:items-center lg:block lg:mt-40 lg:text-center lg:px-0 lg:mb-60 lg:mx-auto xl:max-w-[1111px]">
@@ -27,3 +29,12 @@ const Block = (props) => {
 };
 
 export default Block;
+
+Block.propTypes = {
+  data: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    image: PropTypes.string,
+  }),
+};

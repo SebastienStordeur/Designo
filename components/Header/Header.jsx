@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import Button from "../UI/Button";
 import MobileNavbar from "./Navbar/MobileNavbar";
 import Navbar from "./Navbar/Navbar";
 
@@ -29,7 +28,7 @@ const Header = () => {
         </Link>
       </div>
       <Navbar />
-      {isNavbarShown && <MobileNavbar />}
+      {isNavbarShown && <MobileNavbar onClick={toggleMenuHandler} />}
       <button onClick={toggleMenuHandler} className="md:hidden">
         <Image
           src={

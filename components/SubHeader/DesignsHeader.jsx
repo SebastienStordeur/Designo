@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const DesignsHeader = (props) => {
   return (
@@ -33,3 +34,8 @@ const DesignsHeader = (props) => {
 };
 
 export default DesignsHeader;
+
+DesignsHeader.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+};

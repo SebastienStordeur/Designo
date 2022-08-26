@@ -9,6 +9,10 @@ import SubHeader from "../components/SubHeader/SubHeader";
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>Designo</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
       <Header />
       <SubHeader />
       <section className="pt-[120px] mx-6 md:mx-8 max-w-[1112px] lg:grid lg:grid-cols-2 lg:gap-x-[30px] lg:gap-y-6 xl:mx-auto">

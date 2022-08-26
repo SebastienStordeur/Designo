@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const ProjectInfos = (props) => {
   return (
@@ -17,3 +18,16 @@ const ProjectInfos = (props) => {
 };
 
 export default ProjectInfos;
+
+ProjectInfos.propTypes = {
+  infos: PropTypes.shape({
+    className: PropTypes.string,
+    projectClass: PropTypes.string,
+    project: PropTypes.shape({
+      id: PropTypes.number,
+      description: PropTypes.string,
+      image: PropTypes.string,
+      title: PropTypes.string,
+    }),
+  }),
+};

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import DesignsHeader from "../../components/SubHeader/DesignsHeader";
@@ -9,6 +10,10 @@ import LinkCard from "../../components/Blocks/LinkCard";
 const index = () => {
   return (
     <React.Fragment>
+      <Head>
+        <title>Designo - App Designs</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+     </Head>
       <Header />
       <DesignsHeader
         title="App Design"

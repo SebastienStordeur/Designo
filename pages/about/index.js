@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -10,6 +11,10 @@ import AboutInfos from "../../components/About/AboutInfos";
 const AboutPage = () => {
   return (
     <React.Fragment>
+      <Head>
+        <title>Designo - About us</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Header />
       <DesignsHeader
         image="/assets/about/mobile/image-about-hero.jpg"
