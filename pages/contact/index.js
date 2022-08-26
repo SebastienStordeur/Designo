@@ -15,7 +15,7 @@ const index = () => {
       </Head>
       <Header />
       <ContactHeader />
-      <section className="pt-[120px] lg:flex lg:justify-evenly">
+      <section className="pt-[120px] lg:flex lg:justify-evenly max-w-[1110px] mx-auto">
         {data.countries.map(country => {
           return <Country country={country} key={country.id} />
         })}
