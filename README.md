@@ -1,3 +1,5 @@
+![alt text](./public/screenshot/Capture%20d%E2%80%99%C3%A9cran%202022-08-26%20125846.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
