@@ -31,13 +31,13 @@ const AboutPage = () => {
           delivery. Clients have always been impressed with our high-quality
           outcomes that encapsulates their brand’s story and mission."
       />
-      <section className="pt-[120px] lg:flex lg:justify-evenly">
+      <section className="pt-[120px] w-full max-w-[1111px] mx-auto lg:flex lg:justify-evenly lg:gap-24">
         {data.countries.map((country) => {
           return <Country country={country} key={country.id} />;
         })}
       </section>
       <AboutInfos
-      className="mt-32 lg:flex-row-reverse"
+        className="mt-32 lg:flex-row-reverse"
         image="/assets/about/ /image-real-deal.jpg"
         title="The real deal"
         firstP="As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
